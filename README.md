@@ -5,10 +5,13 @@ _Este proyecto es la solucuión a la prueba tecnica para el cargo de Desarrollad
 
 ### Pre-requisitos 📋
 
-_-Tener docker instalado_
-_-Tener docker desktop en ejecución_
-_-Clonar repositorio_
+_-Tener docker instalado
+-Tener docker desktop en ejecución
+-Clonar repositorio_
 
+
+
+_Por favor seguir los siguientes pasos para la ejecución del proyecto_
 
 ```
 $ gh repo clone diegocordoba96/pru_vul
