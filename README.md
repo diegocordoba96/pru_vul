@@ -49,7 +49,7 @@ _Para el consumo de la API, por favor seguir la siguiente secuencia
 ## Autores ✒️
 
 
-* **Diego Córdoba** - *Trabajo Inicial* - [villanuevand](https://github.com/diegocordoba96)
+* **Diego Córdoba** - *Trabajo Inicial* - [Github](https://github.com/diegocordoba96)
 
 
 También puedes mirar la lista de todos los [Linkedin](https://www.linkedin.com/in/diego-fernando-c%C3%B3rdoba-roma%C3%B1a-7233aa191/) 
