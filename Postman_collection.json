@@ -1,0 +1,411 @@
+{
+	"info": {
+		"_postman_id": "e619ddb2-5182-4523-bcdd-197b94bf144d",
+		"name": "Coleccion Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27586091"
+	},
+	"item": [
+		{
+			"name": "Registrar usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "Token 4af2819e10051a98236385c83123543fb7c72550",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "userprueba",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "user123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/register",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"register"
+					]
+				},
+				"description": "Petición POST registrar user\r\n    "
+			},
+			"response": []
+		},
+		{
+			"name": "Autenticar usuario registrado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "userprueba",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "user123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/login",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver usuario autenticado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token cf61b8bcdf350e90016bf35b35433cf50352e844",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://0.0.0.0:8000/profile",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Total vulneravilidades",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token cf61b8bcdf350e90016bf35b35433cf50352e844",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/vuln_api/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"vuln_api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vulnerabilidades fixeadas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token cf61b8bcdf350e90016bf35b35433cf50352e844",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "andresperez",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "root",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "prueba2@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/vuln/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"vuln",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fixear vulnerabilidad",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token cf61b8bcdf350e90016bf35b35433cf50352e844",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "vul_id",
+							"value": "CVE-2021-45967",
+							"type": "text"
+						},
+						{
+							"key": "fixeada",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/vuln/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"vuln",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vulnerabilidades excepto fixeadas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token cf61b8bcdf350e90016bf35b35433cf50352e844",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/vuln_nofix/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"vuln_nofix",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vulnerabilidades severity HIGH",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token cf61b8bcdf350e90016bf35b35433cf50352e844",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/vuln_severity/HIGH",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"vuln_severity",
+						"HIGH"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vulnerabilidades severity MEDIUM",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token cf61b8bcdf350e90016bf35b35433cf50352e844",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/vuln_severity/MEDIUM",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"vuln_severity",
+						"MEDIUM"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vulnerabilidades severity LOW",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token cf61b8bcdf350e90016bf35b35433cf50352e844",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/vuln_severity/LOW",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"vuln_severity",
+						"LOW"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
