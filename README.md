@@ -1,11 +1,6 @@
-# Prueba tecninca Diego Córdoba
+# Prueba técnica Diego Córdoba
 
 _Este proyecto es la solucuión a la prueba tecnica para el cargo de Desarrollador Backend_
-
-## Comenzando 🚀
-
-__
-
 
 
 ### Pre-requisitos 📋
@@ -25,7 +20,7 @@ $ docker run -p 8000:8000  prueba-emtelco
 
 ### Instalación 🔧
 
-_La aplicación se ejecutará en el puerto 8000, se recomienda descargar las colecciones de POSTMAN que se encuentra en el repositorio con el nombre **Postman_collection** para probar cada uno de los end point. Los Edpoint se encuentra en el orden solicitado en la prueba_
+_La aplicación se ejecutará en el puerto 8000, se recomienda descargar las colecciones de POSTMAN que se encuentra en el repositorio con el nombre **Postman_collection.json** para probar cada uno de los end point. Los Edpoint se encuentra en el orden solicitado en la prueba_
 
 _Para el consumo de la API, por favor seguir la siguiente secuencia
 1 - Registro de usuario

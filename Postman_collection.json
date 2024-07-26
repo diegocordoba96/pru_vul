@@ -22,7 +22,7 @@
 					"formdata": [
 						{
 							"key": "username",
-							"value": "userprueba",
+							"value": "usertest",
 							"type": "text"
 						},
 						{
@@ -33,13 +33,13 @@
 					]
 				},
 				"url": {
-					"raw": "http://0.0.0.0:8000/register",
+					"raw": "http://127.0.0.1:8000/register",
 					"protocol": "http",
 					"host": [
+						"127",
 						"0",
 						"0",
-						"0",
-						"0"
+						"1"
 					],
 					"port": "8000",
 					"path": [
@@ -60,7 +60,7 @@
 					"formdata": [
 						{
 							"key": "username",
-							"value": "userprueba",
+							"value": "userprueba2",
 							"type": "text"
 						},
 						{
@@ -71,13 +71,13 @@
 					]
 				},
 				"url": {
-					"raw": "http://0.0.0.0:8000/login",
+					"raw": "http://127.0.0.1:8000/login",
 					"protocol": "http",
 					"host": [
+						"127",
 						"0",
 						"0",
-						"0",
-						"0"
+						"1"
 					],
 					"port": "8000",
 					"path": [
@@ -99,13 +99,13 @@
 					}
 				],
 				"url": {
-					"raw": "http://0.0.0.0:8000/profile",
+					"raw": "http://127.0.0.1:8000/profile",
 					"protocol": "http",
 					"host": [
+						"127",
 						"0",
 						"0",
-						"0",
-						"0"
+						"1"
 					],
 					"port": "8000",
 					"path": [
@@ -134,13 +134,13 @@
 					"formdata": []
 				},
 				"url": {
-					"raw": "http://0.0.0.0:8000/vuln_api/",
+					"raw": "http://127.0.0.1:8000/vuln_api/",
 					"protocol": "http",
 					"host": [
+						"127",
 						"0",
 						"0",
-						"0",
-						"0"
+						"1"
 					],
 					"port": "8000",
 					"path": [
@@ -170,33 +170,16 @@
 				],
 				"body": {
 					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "username",
-							"value": "andresperez",
-							"type": "text"
-						},
-						{
-							"key": "password",
-							"value": "root",
-							"type": "text",
-							"disabled": true
-						},
-						{
-							"key": "email",
-							"value": "prueba2@gmail.com",
-							"type": "text"
-						}
-					]
+					"formdata": []
 				},
 				"url": {
-					"raw": "http://0.0.0.0:8000/vuln/",
+					"raw": "http://127.0.0.1:8000/vuln/",
 					"protocol": "http",
 					"host": [
+						"127",
 						"0",
 						"0",
-						"0",
-						"0"
+						"1"
 					],
 					"port": "8000",
 					"path": [
@@ -234,13 +217,13 @@
 					]
 				},
 				"url": {
-					"raw": "http://0.0.0.0:8000/vuln/",
+					"raw": "http://127.0.0.1:8000/vuln/",
 					"protocol": "http",
 					"host": [
+						"127",
 						"0",
 						"0",
-						"0",
-						"0"
+						"1"
 					],
 					"port": "8000",
 					"path": [
@@ -273,13 +256,13 @@
 					"formdata": []
 				},
 				"url": {
-					"raw": "http://0.0.0.0:8000/vuln_nofix/",
+					"raw": "http://127.0.0.1:8000/vuln_nofix/",
 					"protocol": "http",
 					"host": [
+						"127",
 						"0",
 						"0",
-						"0",
-						"0"
+						"1"
 					],
 					"port": "8000",
 					"path": [
@@ -312,13 +295,13 @@
 					"formdata": []
 				},
 				"url": {
-					"raw": "http://0.0.0.0:8000/vuln_severity/HIGH",
+					"raw": "http://127.0.0.1:8000/vuln_severity/HIGH",
 					"protocol": "http",
 					"host": [
+						"127",
 						"0",
 						"0",
-						"0",
-						"0"
+						"1"
 					],
 					"port": "8000",
 					"path": [
@@ -351,13 +334,13 @@
 					"formdata": []
 				},
 				"url": {
-					"raw": "http://0.0.0.0:8000/vuln_severity/MEDIUM",
+					"raw": "http://127.0.0.1:8000/vuln_severity/MEDIUM",
 					"protocol": "http",
 					"host": [
+						"127",
 						"0",
 						"0",
-						"0",
-						"0"
+						"1"
 					],
 					"port": "8000",
 					"path": [
@@ -390,13 +373,13 @@
 					"formdata": []
 				},
 				"url": {
-					"raw": "http://0.0.0.0:8000/vuln_severity/LOW",
+					"raw": "http://127.0.0.1:8000/vuln_severity/LOW",
 					"protocol": "http",
 					"host": [
+						"127",
 						"0",
 						"0",
-						"0",
-						"0"
+						"1"
 					],
 					"port": "8000",
 					"path": [
